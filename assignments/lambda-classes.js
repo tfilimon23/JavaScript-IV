@@ -26,3 +26,21 @@ class Instructor extends Person {
         return ('{student.name} receives a perfect score on {subject}');
     }
 }
+
+class Student extends Person {
+    constructor(sProps){
+        super(sProps);
+        this.previousBackground = sProps.previousBackground;
+        this.className = sProps.className;
+        this.favSubjects = sProps.favSubjects;
+    }
+    listSubjects(){
+        console.log(student.favSubjects);
+    }
+    PRAssignment(subject){
+        return ('{student.name} has submitted a PR for {subject}');
+    }
+    sprintChallenge(subject){
+        return ('{student.name} has begun spring challenge on {subject}');
+    }
+}
