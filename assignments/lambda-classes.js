@@ -8,7 +8,7 @@ class Person {
         this.gender = props.gender;
     }
     speak(){
-        return (`Hello, my name is ${this.name}, I am from ${this.location}`);
+        return (`Hello my name is ${this.name}, I am from ${this.location}.`);
     }
 }
 
@@ -41,7 +41,7 @@ class Student extends Person {
         return (`${this.name} has submitted a PR for ${subject}`);
     }
     sprintChallenge(subject){
-        return (`${this.name} has begun spring challenge on ${subject}`);
+        return (`${this.name} has begun sprint challenge on ${subject}`);
     }
 }
 
@@ -129,3 +129,19 @@ const zoey = new ProjectMananger({
     gradClassName: 'Web12',
     favInstructor: 'Diana'
 });
+
+console.log(sally.age); // 12
+console.log(sally.speak()); // Hello, my name is Sally, I am from Warren.
+console.log(nathan.gender); // M
+console.log(nathan.catchPhrase); // Cash me outside
+console.log(amy.demo('classes')); // Today we are learning about classes.
+console.log(amy.grade(tommy, 'constructor functions')); // Tommy receives a perfect score on constructor functions
+console.log(jake.location); // Baton Rouge
+console.log(jake.favSubjects); // ['HTML', 'CSS', 'JS']
+console.log(tommy.listSubjects.apply(tommy, tommy.favSubjects)); // ['Java', 'C#', 'HTML']
+console.log(tommy.PRAssignment('Javascript III')); // Tommy has submitted a PR for Javascript III
+console.log(tommy.sprintChallenge('Javascript')); // Tommy has begun sprint challenge for Javascript
+console.log(meg.specialty); // LESS
+console.log(meg.gradClassName); // Web14
+console.log(zoey.standUp('web17_zoey')); // Zoey announces to web17_zoey, @channel standy times!
+console.log(zoey.debugsCode(jake, 'array methods')); // Zoey debugs Jake's code on array methods
